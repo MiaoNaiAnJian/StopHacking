@@ -62,8 +62,11 @@ ws.onmessage = (msg) => {
   var container = document.createElement("div");
   //if (data.response.type == "error") 
 //	return;
-  container.innerHTML = create_post(data.user, data.post, data.timestamp);
-  posts.insertBefore(container,posts.firstChild);
+  //Don't show my account.
+  if(data.user != "STOP_HACKING"){
+    container.innerHTML = create_post(data.user, data.post, data.timestamp);
+    posts.insertBefore(container,posts.firstChild);
+  }
 } 
 
 var timer

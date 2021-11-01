@@ -31,13 +31,13 @@ function escapeHtml(unsafe)
 function create_post(user, post, timestamp){
   var html = ' \
     <div class="post-preview"> \
-      <a href="user/' + escapeHtml(user) + '"> \
+      <a href="http://ics32distributedsocial.com/user/' + escapeHtml(user) + '"> \
         <h3 class="post-subtitle"> \
           ' + escapeHtml(post) + ' \
         </h3> \
       </a> \
       <p class="post-meta">Posted by \
-        <a href="user/'+ user + '">' + user + '</a> \
+        <a href="http://ics32distributedsocial.com/user/'+ user + '">' + user + '</a> \
         on ' + convertTimestamp(timestamp) + '</p> \
     </div> \
     <hr></hr> \

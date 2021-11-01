@@ -29,7 +29,6 @@ function escapeHtml(unsafe)
 
 
 function create_post(user, post, timestamp){
-    console.log(escapeHtml(post));
   var html = ' \
     <div class="post-preview"> \
       <a href="user/' + escapeHtml(user) + '"> \
